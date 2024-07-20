@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="stayle.css">
+</head>
+
+<body>
+    <header>Phone Book</header>
+    <main>
+        <button onclick="openModal()">Add Contact</button>
+        <ul id="contactList"></ul>
+    </main>
+    <footer>Footer</footer>
+
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <input type="text" id="contactName" placeholder="Name">
+            <input type="text" id="contactPhone" placeholder="Phone">
+            <input type="email" id="contactEmail" placeholder="Email">
+            <button onclick="saveContact()">Save</button>
+            <button onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
